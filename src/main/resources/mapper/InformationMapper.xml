@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pdf.mapper.InformationMapper">
+
+    <resultMap id="BaseResultMap" type="com.pdf.domain.Information">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="dataoffilling" column="dataOfFilling" jdbcType="VARCHAR"/>
+            <result property="dateofdeclaration" column="dateOfDeclaration" jdbcType="VARCHAR"/>
+            <result property="taxationperiod" column="taxationPeriod" jdbcType="VARCHAR"/>
+            <result property="number" column="number" jdbcType="VARCHAR"/>
+            <result property="amountunit" column="amountUnit" jdbcType="VARCHAR"/>
+            <result property="tablename" column="tableName" jdbcType="VARCHAR"/>
+            <result property="filename" column="FileName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,dataOfFilling,
+        dateOfDeclaration,taxationPeriod,number,
+        amountUnit,tableName,FileName
+    </sql>
+</mapper>

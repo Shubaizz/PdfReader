@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pdf.mapper.DetailsMapper">
+
+    <resultMap id="BaseResultMap" type="com.pdf.domain.Details">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="informationid" column="informationId" jdbcType="INTEGER"/>
+            <result property="project" column="project" jdbcType="VARCHAR"/>
+            <result property="projectdetails" column="projectDetails" jdbcType="VARCHAR"/>
+            <result property="columnnumber" column="columnNumber" jdbcType="VARCHAR"/>
+            <result property="numberofmoth" column="numberOfMoth" jdbcType="VARCHAR"/>
+            <result property="numberofyear" column="numberOfYear" jdbcType="VARCHAR"/>
+            <result property="immediatewithdrawalmonth" column="immediateWithdrawalMonth" jdbcType="VARCHAR"/>
+            <result property="refundprojectsaccumulated" column="refundProjectsAccumulated" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,informationId,project,
+        projectDetails,columnNumber,numberOfMoth,
+        numberOfYear,immediateWithdrawalMonth,refundProjectsAccumulated
+    </sql>
+</mapper>
